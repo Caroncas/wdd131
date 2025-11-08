@@ -1,0 +1,25 @@
+* {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+:root {
+    --main-teal: #18A5A5;
+    --main-teal-hover: #158F8F;
+    --sec-ochre: #A57C18;
+    --sec-ochre-hover: #8C6814;
+    --neutral-base: #f0ede3;
+    --base-text: #2b2b2b;
+}
+
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+header, footer, main {
+    background-color: var(--main-teal);
+}
