@@ -1,14 +1,29 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('______');
+const list = document.querySelector('#list');
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+button.addEventListener('click', function() {
+    event.preventDefault();
+    
+    if (input.value.trim() !== '') {
 
-li.textContext = input.value;
-deleteButton.textContent = '❌';
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-li.append(deleteButton);
-li.append(li);
+        li.textContent = input.value;
+        
+        deleteButton.textContent = '❌';
+        deleteButton.setAttribute('aria-label', 'Remove chapter')
 
-//you need to find a way to add aria-label="Close" to the close button emoticon label for screen readers
+        li.append(deleteButton);
+        list.append(li);
+
+        input.value = '';
+        input.focus()
+
+        deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+        input.focus()
+})
+    }
+})
