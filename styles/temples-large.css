@@ -4,6 +4,7 @@ nav ul {
 }
 
 nav ul li {
+    display: block;
     flex: 1 1 100%;
     text-align: center;
     flex-wrap: wrap;
@@ -39,6 +40,10 @@ h1 {
     background-color: var(--sec-ochre);
     border-radius:  1rem 35px;
 }
+
+.menu {
+    display: none;
+}
 }
 
 @media only screen and (min-width: 70rem){
@@ -55,5 +60,13 @@ h1 {
     padding: 15px;
     background-color: var(--sec-ochre);
     border-radius:  1rem 35px;
+}
+
+.menu {
+    display: none;
+}
+
+li {
+    display: block;
 }
 }

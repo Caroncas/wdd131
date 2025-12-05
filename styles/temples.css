@@ -53,21 +53,32 @@ footer {
 }
 
 .menu {
-    display: block;
+    display: inline block;
     font-size: 2rem;
     text-decoration: none;
     padding: .5rem .75rem;
+    background-color: var(--main-teal);
+    border: none;
+    cursor: pointer;
+    color: var(--base-text);
+    border-radius: 6px;
 }
 
-.menu::before {
-    content: "X";
-    background-color: none;
-    color: red;
+.menu:hover {
+    background-color: var(--main-teal-hover);
+    color: white;
+    transition: 0.3s;
 }
 
 .menu.show::before {
-    content: "≡";
+    content: "✕";
     background-color: none;
+}
+
+.menu::before {
+    content: "☰";
+    background-color: none;
+    line-height: 1;
 }
 
 
@@ -131,6 +142,11 @@ img {
 }
 
 nav ul li {
+    display: none;
+}
+
+.navigation.show li {
+    display: block;
     text-align: center;
     padding: 5px;
     list-style: none;
