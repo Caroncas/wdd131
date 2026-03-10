@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: r;
+    color: var(--text-color);
+}
+
+:root {
+    --primary-color: #fdf3d2;
+    --sec-color: rgba(0, 228, 209, 0.986);
+    --ter-color: rgb(230, 177, 3);
+    --text-color: rgb(65, 65, 65);
+    --hover-color: rgba(0, 187, 171, 0.986);
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--primary-color); 
+}
+
+header span {
+    display: block;
+    text-align: center;
+    background-color: var(--sec-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--ter-color);
+    font-weight: 800;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: var(--sec-color);
+    
+}
+
+nav ul li{
+    flex: 1 1 auto;
+}
+
+nav ul li:hover {
+    background-color: var(--hover-color);
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    grid-column: 1/6;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 2px dashed var(--ter-color);
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border: 2px solid var(--sec-color);
+    border-radius: 4rem;
+    margin: 10px;
+
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.card p {
+    text-align: justify;
+    padding: 1rem
+}
+
+footer {
+    background-color: var(--sec-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px dashed var(--ter-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
