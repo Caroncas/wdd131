@@ -19,10 +19,13 @@ body{
     background-color: var(--primary-color); 
 }
 
+header {
+    background-color: var(--sec-color);
+}
+
 header span {
     display: block;
     text-align: center;
-    background-color: var(--sec-color);
     padding: 1rem;
     font-size: 1.5rem;
     border-bottom: 1px solid var(--ter-color);
