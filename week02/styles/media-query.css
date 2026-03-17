@@ -1,0 +1,24 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1 solid rgb(0, 0, 0);
+    padding: 1rem;
+    background-color: rgb(49, 103, 145);
+}
+
+main {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+main section {
+    background-color: rgb(228, 240, 251);
+    padding: 1rem;
+    color: black;
+}
