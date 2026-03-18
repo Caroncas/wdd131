@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="An album consisting of some of Cassandra's temples.">
+    <meta name="author" content="Cassandra Carone">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="montserrat-font">
+    <header>
+        <span id="temple-title">Temple Album</span>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples</h1>
+        <figure>
+            <div class="image-container">
+                <img src="images/bangkok.jpg" alt="Bangkok, Thailand Temple">
+            </div>
+            <figcaption>Bangkok, Thailand</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/cedarcity.jpg" alt="Cedar City, Utah Temple">
+            </div>
+            <figcaption>Cedar City, Utah</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/jordanriver.jpg" alt="Jordan River, Utah Temple">
+            </div>
+            <figcaption>Jordan River, Utah</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/laie.jpg" alt="Laie, Hawaii Temple">
+            </div>
+            <figcaption>Laie, Hawaii</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/nauvoo.jpg" alt="Nauvoo, Illinois Temple">
+            </div>
+            <figcaption>Nauvoo, Illinois</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/newport.jpg" alt="Newport Beach, California Temple">
+            </div>
+            <figcaption>Newport Beach, California</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/payson.jpg" alt="Payson, Utah Temple">
+            </div>
+            <figcaption>Payson, Utah</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/phoenix.jpg" alt="Phoenix, Arizona Temple">
+            </div>
+            <figcaption>Phoenix, Arizona</figcaption>
+        </figure>
+        <figure>
+            <div class="image-container">
+                <img src="images/saratoga.jpg" alt="Saratoga Springs, Utah Temple">
+            </div>
+            <figcaption>Saratoga Springs, Utah</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Cassandra Carone | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

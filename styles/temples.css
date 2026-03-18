@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+:root {
+    --primary-color: #fdf3d2;
+    --sec-color: rgba(0, 228, 209, 0.986);
+    --ter-color: rgb(230, 177, 3);
+    --text-color: rgb(65, 65, 65);
+    --hover-color: rgba(0, 187, 171, 0.986);
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--primary-color); 
+}
+
+header {
+    background-color: var(--sec-color);
+    width: auto;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--ter-color);
+    font-weight: 800;
+}
+
+#menu {
+    background: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    border: 0;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.open a {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: var(--text-color);
+    color: var(--ter-color);
+}
+
+main {
+    max-width: 540px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: .75rem;
+}
+
+.image-container {
+    width: 300px;
+    height: auto;
+}
+
+figcaption {
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-top: 1px solid var(--sec-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 300px;
+    box-shadow: 0 0 50px #333333a0;
+}
+
+footer {
+    background-color: var(--sec-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px dashed var(--ter-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
