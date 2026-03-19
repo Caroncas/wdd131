@@ -1,19 +1,35 @@
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 672px) {
     #menu {
         display: none;
     }
     
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-around;
+        width: 100%;
+        flex: 1;
     }
     .navigation a {
         display: block;
         flex: 1;
         padding: 1rem;
-        /* flex: 1; */
         text-align: center;
+    }
+
+    main {
+        max-width: 1000;
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(300px, 2fr));
+    }
+
+    main h1 {
+        grid-column: 1/3;
     }
 }

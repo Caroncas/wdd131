@@ -56,10 +56,12 @@ header span {
 	content: "X";
 }
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+}
+
+.navigation {
     list-style: none;
 }
 
