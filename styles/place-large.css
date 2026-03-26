@@ -1,13 +1,43 @@
 @media only screen and (min-width: 750px) {
     .weather h2 span {
-        display: none;
+        visibility: hidden;
     }
 
     .weather h2 span::before {
-        content: "Weather 🌤️"
+        content: "Weather 🌤️";
+        visibility: visible;
     }
 
     .weather img {
         display: none;
+    }
+
+    h2 {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    main {
+        position: relative;
+    }
+    
+    picture {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .data {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        background-color: var(--back-faded);
+    }
+    
+    .weather {
+        background-color: var(--back-faded);
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
     }
 }
