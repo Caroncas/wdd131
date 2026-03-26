@@ -3,9 +3,10 @@
         visibility: hidden;
     }
 
-    .weather h2 span::before {
+    .weather h2 span::after {
         content: "Weather 🌤️";
         visibility: visible;
+        text-align: left;
     }
 
     .weather img {
