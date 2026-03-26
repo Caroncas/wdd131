@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah, USA | Places Page</title>
+    <meta name="description" content="A page describing the home state of Cassandra.">
+    <meta name="author" content="Cassandra Carone">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>UTAH</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/utah-1500-view.webp" media="(min-width: 750px)">
+            <img src="images/utah-mobile-view.webp" alt="Utah Red Rocks" width="750" height="auto">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area:  84,899 sq miles</li>
+                <li>Population:  3.55 million</li>
+                <li>Capital:  Salt Lake City</li>
+                <li>Languages:  English, Spanish, Chinese, etc.</li>
+                <li>Time Zone:  UTC-6 (MST)</li>
+                <li>Area Code:  (801)</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2><span>Weather</span></h2>
+            <img src="images/partly-cloudy.svg" alt="Partly cloudy emoji">
+            <ul>
+                <li>Temperature:  61°F</li>
+                <li>Conditions:  Mostly Sunny</li>
+                <li>Wind:  12 mph</li>
+                <li id="wind-chill">Wind Chill:  <span></span></li>
+                <li>Humidity:  27%</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Cassandra Carone | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
