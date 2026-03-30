@@ -20,7 +20,7 @@
         flex: 1 1 auto;
     }
 
-    .navigation button {
+    .navigation a {
         display: block;
         padding: 1rem;
         text-align: center;
