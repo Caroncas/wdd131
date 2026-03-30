@@ -1,0 +1,55 @@
+:root {
+    --pri-color: rgb(0, 235, 235);
+    --pri-color-muted: rgb(0, 158, 158);
+    --sec-color: rgb(255, 255, 255);
+    --sec-color-muted: rgb(211, 211, 211);
+    --font-color: rgb(40, 35, 30);
+    --light-font-color: rgb(254, 248, 232);
+}
+
+body {
+    padding: .5rem;
+}
+
+table {
+    width: 500px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    font-size: smaller;
+    font-style: italic;
+    color: var(--font-color);
+    caption-side: bottom;
+    padding: .5rem;
+}
+
+th, td {
+    padding: 0.5rem, 1rem;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    white-space: pre;
+}
+
+.dark {
+    background-color: var(--pri-color);
+    border: 0;
+}
+
+.light {
+    background-color: var(--pri-color-muted);
+    color: var(--light-font-color)
+}
+
+th {
+    padding: .75rem;
+}
+
+tbody tr:nth-last-child(even) {
+    background-color: var(--sec-color-muted);
+}
+
+tbody tr:nth-last-child(odd) {
+    background-color: var(--sec-color);
+}

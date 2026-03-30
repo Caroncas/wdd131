@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="An album consisting of some of Cassandra's temples.">
+    <meta name="author" content="Cassandra Carone">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="montserrat-font">
+    <header>
+        <span id="temple-title">Temple Album</span>
+        <button id="menu" title="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <!-- <li><a href="#" title="Home" id="home">Home</a></li> -->
+                <li><button title="All Temples" id="home">Home</button></li>
+                <!-- <li><a href="#" title="Old" id="old">Old</a></li> -->
+                <li><button title="Temples Built Before 1900" id="old">Old</button></li>
+                <!-- <li><a href="#" title="New" id="new">New</a></li> -->
+                <li><button title="Temples Built After 2000" id="new">New</button></li>
+                <!-- <li><a href="#" title="Large" id="large">Large</a></li> -->
+                <li><button title="Temples Larger Than 90,000 sqft" id="large">Large</button></li>
+                <!-- <li><a href="#" title="Small" id="small">Small</a></li> -->
+                <li><button title="Temples Smaller Than 10,000 sqft" id="small">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples</h1>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Cassandra Carone | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
