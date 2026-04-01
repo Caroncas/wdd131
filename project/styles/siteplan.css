@@ -1,0 +1,68 @@
+:root {
+    --pri-color: #2A3F41;
+    --sec-color: #52796F;
+    --ter-color: #84A98C;
+    --text-color: #CAD2C5;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+    padding: 0.5;
+    background-color: var(--ter-color);
+}
+
+h1 {
+    font-family: poiret one;
+    font-weight: 100;
+    font-size: 5rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--pri-color);
+    color: var(--text-color);
+}
+
+div {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    background-color: var(--pri-color);
+    color: var(--text-color);
+}
+
+div p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+h2 {
+    font-family: Rubik Dirt;
+    font-size: 5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+div h3 {
+    font-family: poiret one;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+}
