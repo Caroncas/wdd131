@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #fff5f0;
+    --sec-color: rgba(165, 231, 217, 0.986);
+    --ter-color: rgb(223, 209, 162);
+    --text-color: rgb(65, 65, 65);
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    text-align: left;
+    background-color: var(--sec-color);
+    padding: .5rem 0 .5rem 1.5rem;
+    max-width: 800px;
+    font-size: 2rem;
+    font-style: bold;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}
+
+main {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;
+    /* width: 90%; */
+}
+
+.title {
+    font-size: larger;
+    padding-top: 1rem;
+    padding-bottom: 3px;
+}
+
+form {
+    max-width: 600px;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+label input[type="text"],
+select,
+label input[type="date"] {
+    display: block;
+    max-width: 300px;
+    background-color: var(--ter-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    padding: .75rem;
+    margin: .5rem 0;
+    appearance: none;    
+}
+
+form input[type='radio'],
+form input[type='checkbox'] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    margin-left: 6px; 
+}
+
+form input[type='radio']:checked,
+form input[type='checkbox']:checked {
+    background-color: var(--ter-color);
+}
+
+form input[type='checkbox'] {
+    border-radius: 6px;
+}
+
+
+input[type="submit"] {
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: large;
+    background-color: var(--sec-color);
+    text-align: center;
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    padding: 0 0 10px;
+}
+
+footer {
+    background-color: var(--sec-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px dashed var(--ter-color);
+    color: var(--text-color);
+    font-weight: 600;
+}

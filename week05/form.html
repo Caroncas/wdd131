@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="A mock product review form displaying form best practices">
+    <meta name="author" content="Cassandra Carone">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+            <label class="title">Product Name
+                <select name="productName" id="product" required>
+                    <option value="" selected disabled><i>Select a Product...</i></option>
+                </select>
+            </label>
+
+            <div class="title">Overall Rating</div>
+            <label><input type='radio' name='stars' value='one' id='one' required> ⭐</label>
+            <label><input type='radio' name='stars' value='two' id='two' required> ⭐⭐</label>
+            <label><input type='radio' name='stars' value='three' id='three' required> ⭐⭐⭐</label>
+            <label><input type='radio' name='stars' value='four' id='four' required> ⭐⭐⭐⭐</label>
+            <label><input type='radio' name='stars' value='five' id='five' required> ⭐⭐⭐⭐⭐</label>
+
+            <label class="title">Date of Installation <input type="date" name="installationDate" id="date" required></label>
+
+            <div class="title">Which Features Were Useful?</div>
+            <p><i>(Select all that apply)</i></p>
+            <label><input type="checkbox" name="durability" id="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" name="ease" id="ease" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" name="performance" id="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+
+            <!-- Written Review (text area) (optional)-->
+            <label class="title" class="optional">Written Review <span class="optional">(Optional)</span> <input type="text" name="review" id="review"></label>
+            <!-- User Name (text area) (optional)-->
+            <label class="title" class="optional"> Your Name <span class="optional">(Optional)</span> <input type="text" name="name" id="name"></label>
+            <!-- Form Submission Button (submit) -->
+            <input type="submit" value="Share Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Cassandra Carone | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
