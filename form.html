@@ -23,26 +23,56 @@
                 </select>
             </label>
 
-            <textarea class="title">Overall Rating</textarea>
-            <label for="one"><input type='radio' name='stars' value='one' id='one' required> ⭐</label>
-            <label for="two"><input type='radio' name='stars' value='two' id='two' required> ⭐⭐</label>
-            <label for="three"><input type='radio' name='stars' value='three' id='three' required> ⭐⭐⭐</label>
-            <label for="four"><input type='radio' name='stars' value='four' id='four' required> ⭐⭐⭐⭐</label>
-            <label for="five"><input type='radio' name='stars' value='five' id='five' required> ⭐⭐⭐⭐⭐</label>
+            <div class="title">Overall Rating</div>
+            <div class="option">
+                <input type='radio' name='stars' value='one' id='one' required>
+                <label for="one"> ⭐</label>
+            </div>
+            <div class="option">
+                <input type='radio' name='stars' value='two' id='two' required>
+                <label for="two"> ⭐⭐</label>
+            </div>
+            <div class="option">
+                <input type='radio' name='stars' value='three' id='three' required>
+                <label for="three"> ⭐⭐⭐</label>
+            </div>
+            <div class="option">
+                <input type='radio' name='stars' value='four' id='four' required>
+                <label for="four"> ⭐⭐⭐⭐</label>
+            </div>
+            <div class="option">
+                <input type='radio' name='stars' value='five' id='five' required>
+                <label for="five"> ⭐⭐⭐⭐⭐</label>
+            </div>
 
-            <label class="title" for="date">Date of Installation <input type="date" name="installationDate" id="date" required></label>
+            <label class="title" for="date">Date of Installation</label>
+            <input type="date" name="installationDate" id="date" required>
 
-            <textarea class="title">Which Features Were Useful?</textarea>
+            <div class="title">Which Features Were Useful?</div>
             <p><i>(Select all that apply)</i></p>
-            <label for="durability"><input type="checkbox" name="durability" id="durability" value="yes"> Durability</label>
-            <label for="ease"><input type="checkbox" name="ease" id="ease" value="yes"> Ease of Use</label>
-            <label for="performance"><input type="checkbox" name="performance" id="performance" value="yes"> Performance</label>
-            <label for="design"><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+            <div class="option">
+                <input type="checkbox" name="durability" id="durability" value="yes">
+                <label for="durability"> Durability</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="ease" id="ease" value="yes">
+                <label for="ease"> Ease of Use</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="performance" id="performance" value="yes">
+                <label for="performance"> Performance</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="design" id="design" value="yes">
+                <label for="design"> Design</label>
+            </div>
 
             <!-- Written Review (text area) (optional)-->
-            <label class="title" for="review">Written Review <span class="optional">(Optional)</span> <input type="text" name="review" id="review"></label>
+            <label class="title" for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea name="review" id="review"></textarea>
             <!-- User Name (text area) (optional)-->
-            <label class="title" for="name"> Your Name <span class="optional">(Optional)</span> <input type="text" name="name" id="name"></label>
+            <label class="title" for="name"> Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" name="name" id="name">
             <!-- Form Submission Button (submit) -->
             <input type="submit" value="Share Review">
         </form>
