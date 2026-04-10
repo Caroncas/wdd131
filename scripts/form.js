@@ -25,7 +25,8 @@ const products = [
     averagerating: 5.0
   }
 ];
-const selectList = document.querySelector('#product')
+const selectList = document.querySelector('#product');
+const form = document.querySelector('form')
 
 products.forEach((product) => {
     const option = document.createElement('option');
@@ -34,6 +35,8 @@ products.forEach((product) => {
     selectList.append(option);
 })
 
-let numVisits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
-numVisits++;
-localStorage.setItem('numVisits-ls', numVisits)
+form.addEventListener("submit", () => {
+  let numReviews = Number(window.localStorage.getItem('numReviews-ls')) || 0;
+  numReviews++;
+  localStorage.setItem('numReviews-ls', numReviews)
+})

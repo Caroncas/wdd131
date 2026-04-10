@@ -17,13 +17,13 @@
     <main>
         <h1>Product Review</h1>
         <form method="get" action="review.html">
-            <label class="title" for="product">Product Name
+            <label class="title" for="product">Product Name *
                 <select name="product" id="product" required>
                     <option value="" selected disabled><i>Select a Product...</i></option>
                 </select>
             </label>
 
-            <div class="title">Overall Rating</div>
+            <div class="title">Overall Rating *</div>
             <div class="option">
                 <input type='radio' name='stars' value='one' id='one' required>
                 <label for="one"> ⭐</label>
@@ -45,10 +45,10 @@
                 <label for="five"> ⭐⭐⭐⭐⭐</label>
             </div>
 
-            <label class="title" for="date">Date of Installation</label>
+            <label class="title" for="date">Date of Installation *</label>
             <input type="date" name="installationDate" id="date" required>
 
-            <div class="title">Which Features Were Useful?</div>
+            <div class="title">Which Features Were Useful? *</div>
             <p><i>(Select all that apply)</i></p>
             <div class="option">
                 <input type="checkbox" name="durability" id="durability" value="yes">
