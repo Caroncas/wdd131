@@ -6,7 +6,8 @@
     <title>Home - Jigsaw Puzzle Hub</title>
     <meta name="description" content="Home page for 'Jigsaw Puzzle Hub'; a hub for puzzlers around the world to access social platforms, provide puzzling suggestions and best practices, and share some fun jigsaw facts.">
     <meta name="author" content="Cassandra Carone">
-    <link rel="stylesheet" href="styles/siteplan.css">
+    <!-- <link rel="stylesheet" href="styles/siteplan.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getYear.js" defer></script>
     <script src="" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,42 +18,43 @@
 <body>
     <header>
         <!-- Title - Logo -->
-        <h1>Jigaw Puzzle Hub</h1>
-        <img src="images/JigsawPuzzleHubLogo.png" loading="">
+        <h1>Jigsaw Puzzle Hub</h1>
+        <a href="#"><img id="logo-button"src="images/JigsawPuzzleHubLogo.png" alt="Jigsaw Puzzle Hub Logo"></a>
          <!-- Nav (Home - FAQ/Tips & Tricks - Brands - History/Fun Facts - Connect) -->
+        <button id="menu" title="Menu"></button> 
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="">Connect</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Brands</a></li>
-                <li><a href="">Learn</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="learn.html">Learn</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="purpose"> 
-            <img src="images/JigsawPuzzleHubLogo.png" loading="lazy">
+        <div class="purpose"> 
+            <img src="images/JigsawPuzzleHubLogo.png" id="purpose" alt="Jigsaw Puzzle Hub Logo" loading="lazy">
             <h2>Our Purpose</h2>
-            <p>Content about why I created it here.</p>
+            <p>The Jigsaw Puzzle Hub was created as a centralized resource for puzzle enthusiasts of all experience levels. It provides curated information on high-quality puzzle brands, techniques, and trends within the puzzling community. The platform aims to simplify discovery, enhance skill development, and foster connection among puzzlers worldwide. By combining educational content with community-driven features, the site supports both casual hobbyists and dedicated collectors.</p>
         </div>
         <div id="overview">
-            <h2>What You'll Find</h2>
-            <div >
+            <h2>What To Expect</h2>
+            <div>
                 <h3>Connect</h3>
-                <p>Connect Page description here</p>
+                <p>Serves as a gateway to the broader puzzling community, featuring links to social media platforms, popular puzzle retailers, and global competitions. It also highlights emerging trends and notable contributors within the puzzling world. If desired, visitors can join the community by signing up for a monthly newsletter to stay informed and engaged.</p>
             </div>
             <div>
                 <h3>FAQ</h3>
-                <p>FAQ Page description here</p>
+                <p>Provides quick access to commonly asked questions about jigsaw puzzling, including materials, techniques, benefits, and purchasing recommendations. A community forum allows users to ask additional questions and share insights, in order to support both beginners and experienced puzzlers with practical, reliable information.</p>
             </div>
             <div>
                 <h3>Brands</h3>
-                <p>Brands Page description here</p>
+                <p>Highlights a curated selection of fan-favorite jigsaw puzzle manufacturers known for their quality, craftsmanship, and unique designs. Each brand profile outlines distinguishing features such as piece fit, artwork style, and material quality. Users can explore recommended puzzles and find products that match their preferences and skill level.</p>
             </div>
             <div>
                 <h3>Learn</h3>
-                <p>Learn Page description here</p>
+                <p>Offers in-depth content on the history and evolution of jigsaw puzzles, along with tutorials designed to improve technique and efficiency. It also showcases notable achievements and innovations within the puzzling world, including record-breaking puzzles and unique formats such as 3D designs. This section serves as an educational hub for expanding both knowledge and appreciation of the craft.</p>
             </div>
         </div>
         <div>
@@ -62,12 +64,20 @@
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Jigsaw Puzzle Hub</p>
-        <!-- Not sure what we want to do here? Want to add socials down here? Links elsewhere? Nothing?  -->
-        <!-- I think socials will work best down here then alter web view to have purpose 1st
-         Let's shoot for PINTEREST, FB, INSTA, & TIK -->
-        <a href=""><img src=""></a>
-        
+        <div class="follow">
+            <h3>Follow Us:</h3>
+            <a href="https://www.pinterest.com"><img src="images/pinterest-bw.svg" alt="Pinterest Logo" loading="lazy"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook-bw.svg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-bw.svg" alt="Instagram Logo" loading="lazy"></a>
+            <a href="https://www.tiktok.com"><img src="images/tictok-bw.svg" alt="TikTok Logo" loading="lazy"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube-bw.svg" alt="Facebook Logo" loading="lazy"></a>
+        </div>
+        <div class="location">
+            <h3>Our Locations:</h3>
+        </div>
+            <p>&copy; <span id="currentYear"></span> Jigsaw Puzzle Hub</p>
+            <!-- Not sure what we want to do here? Want to add socials down here? Links elsewhere? Nothing?  -->
+            <!-- I think socials will work best down here then alter web view to have purpose 1st -->
     </footer>
 </body>
 </html>
