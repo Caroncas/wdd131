@@ -1,0 +1,17 @@
+@media only screen and (675px <= width <=875) {
+    #how-to {
+        grid-template-columns: 1fr;
+    }
+
+    #how-to h2 {
+        grid-column: 1/2;
+    }
+
+    #special {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #special h2 {
+        grid-column: 1/3;
+    }
+}
