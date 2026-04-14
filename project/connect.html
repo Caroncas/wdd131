@@ -6,10 +6,10 @@
     <title>Home - Jigsaw Puzzle Hub</title>
     <meta name="description" content="Home page for 'Jigsaw Puzzle Hub'; a hub for puzzlers around the world to access social platforms, provide puzzling suggestions and best practices, and share some fun jigsaw facts.">
     <meta name="author" content="Cassandra Carone">
-    <!-- <link rel="stylesheet" href="styles/siteplan.css"> -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/connect.css">
     <script src="scripts/getYear.js" defer></script>
-    <script src="" defer></script>
+    <script src="scripts/formSubmittal.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <header>
         <!-- Title - Logo -->
         <h1>Jigsaw Puzzle Hub</h1>
-        <a href="index.html"><img id="logo-button"src="images/JigsawPuzzleHubLogo.png" alt="Jigsaw Puzzle Hub Logo"></a>
+        <a href="index.html"><img id="logo-button"src="images/jigsaw-puzzle-hub-logo.png" alt="Jigsaw Puzzle Hub Logo"></a>
          <!-- Nav (Home - FAQ/Tips & Tricks - Brands - History/Fun Facts - Connect) -->
         <button id="menu" title="Menu"></button> 
         <nav>
@@ -33,11 +33,15 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div class="follow" id="top">
             <h2>Follow us!</h2>
-            <p>Include our socials</p>
+            <a href="https://www.pinterest.com"><img src="images/pinterest-bw.svg" alt="Pinterest Logo" loading="lazy"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook-bw.svg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-bw.svg" alt="Instagram Logo" loading="lazy"></a>
+            <a href="https://www.tiktok.com"><img src="images/tictok-bw.svg" alt="TikTok Logo" loading="lazy"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="Jigsaw Puzzle Hub YouTube Channel"><img src="images/youtube-bw.svg" alt="YouTube Logo" loading="lazy"></a>
             <h3>Interested in Our Monthly Newsletter?</h3>
-            <form> <!--Do we need to add method="get" action="file-name.html"??-->
+            <form method="get" action="questions.html"> 
                 <label for="fname">First Name: </label>
                 <input type="text" name="fname" id="fname" required>
                 <label for="lname">Last Name: </label>
@@ -45,47 +49,81 @@
                 <label for="email">Email Address: </label>
                 <input type="email" name="email" id="email" required>
 
-                <input type="submit" value="Sign Up!">
+                <button type="submit">Sign Up!</button>
             </form>
         </div>
-        <div>
-            <h2>Virtual Jigsaw Puzzles</h2>
-            <p>https://www.jigsawexplorer.com/</p>
-            <p>https://www.jigsawplanet.com/</p>
-            <p>https://onlinejigsawpuzzles.net/</p>
-            <p>And so many more! Just search: "online jigsaw puzzles"</p>
-        </div>
-        <div>
+        <div id="youtube" class="outer-div">
             <h2>YouTube Channels</h2>
-            <p>Fix this later pretty please</p>
-            <p>https://www.youtube.com/@KarenPuzzles</p>
-            <p>https://www.youtube.com/@jennyjigsaw</p>
-            <p>https://www.youtube.com/@thepuzzlingcanadian</p>
+            <div class="youtube">
+                <a href="https://www.youtube.com/@KarenPuzzles" aria-label="Karen Puzzles YouTube Channel"><img src="images/youtube-bw.svg" alt="YouTube Logo" loading="lazy"></a>
+                <h3>@Karen Puzzles</h3>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/@jennyjigsaw" aria-label="Jenny Jigsaw YouTube Channel"><img src="images/youtube-bw.svg" alt="YouTube Logo" loading="lazy"></a>
+                <h3>@Jenny Jigsaw</h3>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/@thepuzzlingcanadian" aria-label="The Puzzling Canadian YouTube Channel"><img src="images/youtube-bw.svg" alt="YouTube Logo" loading="lazy"></a>
+                <h3>@The Puzzling Canadian</h3>
+            </div>
         </div>
-        <div>
+        <div id="socials" class="outer-div">
             <h2>Faceook | Instagram | TikTok</h2>
-            <p>Facebook: https://www.facebook.com/jigsawworld/ (if you're interested in buying Ig)<br>
-            https://www.facebook.com/groups/jigsawpuzzlelover/(community of puzzlers) <br>
-            https://www.facebook.com/groups/231993434414637/ (same) <br>
-            https://www.facebook.com/groups/speedpuzzling/
-        </p>
-            <p>Instagram: https://www.instagram.com/karenpuzzles/ <br>
-            https://www.instagram.com/puzzlesbynathan/ <br>
-            https://www.instagram.com/bizzlespuzzles/ <br>
-            If you're interested in more, feel free to check <a src="https://soonness.com/blogs/fun-reads/best-puzzle-instagram-accounts?srsltid=AfmBOooAbEX3CqkpV54eP5gAP9QNs2W-G2H3oeJQA8G4EHPwsmx0wVnF">here</a>
-        </p>
-            <p>TikTok: https://www.tiktok.com/@letspuzzle <br>
-                https://www.tiktok.com/@arosepuzzles <br>
-                https://www.tiktok.com/@puzzlesandco <br>
-                https://cloudberries.co.uk/blogs/puzzle-blog/the-10-best-jigsaw-puzzle-accounts-to-follow-on-tiktok 
-            </p>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.facebook.com/jigsawworld/"><img src="images/facebook-bw.svg" alt="facebook logo"> Jigsaw World</a></li>
+                    <li><a href="https://www.facebook.com/groups/jigsawpuzzlelover/"><img src="images/facebook-bw.svg" alt="facebook logo"> Jigsaw Puzzle Lovers</a></li>
+                    <li><a href="https://www.facebook.com/groups/231993434414637/"><img src="images/facebook-bw.svg" alt="facebook logo"> jigsaw puzzles</a></li>
+                    <li><a href="https://www.facebook.com/groups/speedpuzzling/"><img src="images/facebook-bw.svg" alt="facebook logo"> Speed Puzzling</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.instagram.com/karenpuzzles/"><img src="images/instagram-bw.svg" alt="Instagram Logo"> Karen Puzzles</a></li>
+                    <li><a href="https://www.instagram.com/puzzlesbynathan/"><img src="images/instagram-bw.svg" alt="Instagram Logo"> Puzzles by Nathan</a></li>
+                    <li><a href="https://www.instagram.com/bizzlespuzzles/"><img src="images/instagram-bw.svg" alt="Instagram Logo"> Bizzle's Puzzles</a></li>
+                    <li class="more"><a href="https://soonness.com/blogs/fun-reads/best-puzzle-instagram-accounts?srsltid=AfmBOooAbEX3CqkpV54eP5gAP9QNs2W-G2H3oeJQA8G4EHPwsmx0wVnF" aria-label="Top 10 best Jigsaw Puzzle Instagram accounts"> More</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.tiktok.com/@letspuzzle"><img src="images/tictok-bw.svg" alt="TikTok Logo"> @Let's Puzzle</a></li>
+                    <li><a href="https://www.tiktok.com/@arosepuzzles"><img src="images/tictok-bw.svg" alt="TikTok Logo"> @Puzzles.puzzles</a></li>
+                    <li><a href="https://www.tiktok.com/@puzzlesandco"><img src="images/tictok-bw.svg" alt="TikTok Logo"> @Lea Larsen</a></li>
+                    <li class="more"><a href="https://cloudberries.co.uk/blogs/puzzle-blog/the-10-best-jigsaw-puzzle-accounts-to-follow-on-tiktok" aria-label="Top 10 best Jigsaw Puzzle Tik Tok accounts"> More</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
+        <div id="comp" class="outer-div">
             <h2>Competition</h2>
-            <p>https://www.usajigsaw.org/</p>
-            <p>https://www.usajigsaw.org/usajpa-events</p>
-            <p>https://worldjigsawpuzzle.org/</p>
-            <p>https://www.speedpuzzling.com/in_person.html#/</p>
+            <div>
+                <img src="images/globe.svg" alt="Globe Image" loading="lazy">
+                <a href="https://worldjigsawpuzzle.org/">World Jigsaw Puzzle Federation</a>
+            </div>
+            <div>
+                <img src="images/usa-flag.svg" alt="US Flag" loading="lazy">
+                <a href="https://www.usajigsaw.org/usajpa-events">USA Jigsaw Puzzle Association</a>
+            </div>
+            <div>
+                <img src="images/timer.svg" alt="Timer Image" loading="lazy">
+                <a href="https://www.speedpuzzling.com/in_person.html#/">Speed Puzzling</a>
+            </div>
+        </div>
+        <div id="virtual" class="outer-div">
+            <h2>Virtual Jigsaw Puzzles</h2>
+            <div>
+                <img src="images/explore-compass.svg" alt="Compass Picture" loading="lazy">
+                <a href="https://www.jigsawexplorer.com/">Jigsaw Explorer</a>
+            </div>
+            <div>
+                <img src="images/planet.svg" alt="Planet Picture" loading="lazy">
+                <a href="https://www.jigsawplanet.com/">Jigsaw Planet</a>
+            </div>
+            <div>
+                <img src="images/puzzle-piece.svg" alt="Puzzle Piece Picture" loading="lazy">
+                <a href="https://onlinejigsawpuzzles.net/">Online Jigsaw Puzzles</a>
+            </div>
+            <!-- <p>And so many more! Just search: "online jigsaw puzzles"</p> -->
         </div>
     </main>
     <footer>
@@ -95,10 +133,13 @@
             <a href="https://www.facebook.com/"><img src="images/facebook-bw.svg" alt="Facebook Logo" loading="lazy"></a>
             <a href="https://www.instagram.com/"><img src="images/instagram-bw.svg" alt="Instagram Logo" loading="lazy"></a>
             <a href="https://www.tiktok.com"><img src="images/tictok-bw.svg" alt="TikTok Logo" loading="lazy"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube-bw.svg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube-bw.svg" alt="YouTube Logo" loading="lazy"></a>
         </div>
         <div class="location">
             <h3>Our Locations:</h3>
+            <a href="https://maps.app.goo.gl/QYkfe3bRg6YVLiPR8">Nashville, TN, USA</a>
+            <a href="https://maps.app.goo.gl/4CE7JSHzSV57EM4cA">Hagåtña, Guam</a>
+            <a href="https://maps.app.goo.gl/LyGD5P5M9jpc2mJo6">Copenhagen, Denmark</a>
         </div>
         <p>&copy; <span id="currentYear"></span> Jigsaw Puzzle Hub</p>
     </footer>

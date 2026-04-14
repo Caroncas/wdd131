@@ -1,0 +1,107 @@
+:root {
+    --pri-color: #2A3F41;
+    --sec-color: #4d725b;
+    --ter-color: #bdefa3;
+    --hover-color: #78aa84;
+    --text-color: #e5efdf;
+}
+
+poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.question {
+    position: relative;
+}
+
+.question h3 {
+    text-align: left;
+    width: 95%;
+}
+
+.drop-down {
+    position: absolute;
+    right: 25px;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.drop-down::before {
+    font-size: 2rem;
+    content: '▼';
+    color: var(--text-color);
+    background: var(--sec-color);
+}
+
+.drop-down.open::before {
+    content: 'X';
+    font-size: 3rem;
+    color: var(--text-color)
+}
+
+.answer {
+    display: none;
+}
+
+.answer.open {
+    display: block;
+    text-align: left;
+    padding: 1rem;
+}
+
+#no-border {
+    box-shadow: none;
+    background-color: var(--sec-color);
+    color: var(--text-color);
+    border: none;
+    margin: 0;
+}
+
+#no-border h4 {
+    font-size: 2rem;
+}
+
+textarea {
+    padding: 1rem .75rem;
+    height: 4rem;
+}
+
+@media (width >= 450px) and (width <= 750px) {
+    div h2 {
+        font-size: 3.5rem;
+    }
+
+    div h3 {
+        font-size: 2.5rem;
+    }
+
+    .question h3 {
+        width: 90%;
+    }
+    
+    .drop-down {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    .question h3 {
+        width: 85%;
+        font-size: 1.5rem;
+    }
+
+    div h2 {
+        font-size: 2.5rem;
+    }
+
+    .drop-down::before {
+        font-size: 1rem;
+    }
+
+    .drop-down.open::before {
+        font-size: 1.5rem;
+    }
+}

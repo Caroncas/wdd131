@@ -6,10 +6,11 @@
     <title>Home - Jigsaw Puzzle Hub</title>
     <meta name="description" content="Home page for 'Jigsaw Puzzle Hub'; a hub for puzzlers around the world to access social platforms, provide puzzling suggestions and best practices, and share some fun jigsaw facts.">
     <meta name="author" content="Cassandra Carone">
-    <!-- <link rel="stylesheet" href="styles/siteplan.css"> -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/faq.css">
     <script src="scripts/getYear.js" defer></script>
-    <script src="" defer></script>
+    <script src="scripts/faq.js" defer></script>
+    <script src="scripts/formSubmittal.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <header>
         <!-- Title - Logo -->
         <h1>Jigsaw Puzzle Hub</h1>
-        <a href="index.html"><img id="logo-button"src="images/JigsawPuzzleHubLogo.png" alt="Jigsaw Puzzle Hub Logo"></a>
+        <a href="index.html"><img id="logo-button"src="images/jigsaw-puzzle-hub-logo.png" alt="Jigsaw Puzzle Hub Logo"></a>
          <!-- Nav (Home - FAQ/Tips & Tricks - Brands - History/Fun Facts - Connect) -->
         <button id="menu" title="Menu"></button> 
         <nav>
@@ -35,54 +36,75 @@
     <main>
         <div>
             <h2>Frequently Asked Questions</h2>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>How many pieces should I choose?</h3>
                 <p class="answer">Include Accessibility sections</p>
             </div>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>How long should it take to complete my puzzle?</h3>
-                <p class="answer"></p>
+                <p class="answer">Completion time varies widely based on puzzle size, image complexity, and individual skill level. A smaller puzzle may take a few hours, while a 1,000-piece puzzle can range from several hours to multiple days of casual work. Rather than focusing on speed, many puzzlers treat the process as a relaxing, ongoing activity to return to over time. Setting realistic expectations helps maintain enjoyment and reduces unnecessary frustration.</p>
             </div>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>How should I store my puzzle if I can't finish it?</h3>
-                <p class="answer"></p>
+                <p class="answer">Unfinished puzzles can be safely stored using puzzle mats, roll-up systems, or portable puzzle boards that allow for easy transport without losing progress. If space is limited, carefully sliding the puzzle onto a flat surface such as cardboard or a tray can help preserve the layout. Keeping pieces contained and protected from pets, children, or movement is key to maintaining progress.</p>
             </div>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>What do I do once I've finished the puzzle?</h3>
-                <p class="answer"></p>
+                <p class="answer">Completed puzzles can be preserved by gluing and framing them for display, turning them into decorative or sentimental pieces. Alternatively, they can be carefully disassembled and stored for future use, shared with friends and family, or donated to extend their lifespan. Some puzzlers also enjoy trading or reselling completed puzzles to explore new designs. The next step often depends on whether the puzzle is viewed as a one-time experience or a reusable activity.</p>
             </div>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>What are the benefits of puzzling?</h3>
-                <p class="answer">This one is probably going to have quite a few subsections haha</p>
+                <div class="answer" id="no-border">
+                    <h4>Cognitive Development & Brain Health</h4>
+                    <p>Puzzling actively engages multiple areas of the brain at once, strengthening problem-solving skills, visual-spatial reasoning, and memory. It requires recognizing patterns, shapes, and color relationships, which improves cognitive flexibility. Over time, regular puzzling can help maintain mental sharpness and support long-term brain health.</p>
+                    <h4>Improved Focus & Attention Span</h4>
+                    <p>Completing a puzzle requires sustained concentration and attention to detail. This helps train the brain to focus for longer periods, which can translate into improved productivity in other areas. It’s especially beneficial in a world full of constant digital distractions.</p>
+                    <h4>Stress Reduction & Mindfulness</h4>
+                    <p>Puzzling promotes a calm, meditative state by encouraging individuals to focus on a single, repetitive task. This can reduce stress and anxiety, similar to activities like coloring or knitting. Many people use puzzles as a way to unwind and mentally reset after a busy day.</p>
+                    <h4>Memory Enhancement</h4>
+                    <p>Working on puzzles strengthens short-term memory by requiring players to remember shapes, colors, and piece locations. It also reinforces connections between brain cells, improving information retention. This makes puzzling particularly valuable for both developing and aging minds.</p>
+                    <h4>Problem-Solving Skills</h4>
+                    <p>Every puzzle presents a series of small challenges that must be solved step by step. This builds persistence, logical thinking, and the ability to approach problems from different angles. Over time, puzzlers become more efficient at recognizing patterns and developing strategies.</p>
+                    <h4>Fine Motor Skills & Hand-Eye Coordination</h4>
+                    <p>Handling and placing pieces improves dexterity and coordination, especially in younger children. It strengthens the connection between visual input and physical movement. These skills are also beneficial for maintaining motor function in older adults.</p>
+                    <h4>Social Connection & Collaboration</h4>
+                    <p>Puzzles can be a shared activity that brings people together. Working collaboratively encourages communication, teamwork, and shared problem-solving. It also creates a sense of accomplishment when the final image is completed as a group.</p>
+                    <h4>Sense of Achievement & Motivation</h4>
+                    <p>Finishing a puzzle provides a clear, tangible sense of accomplishment. This can boost confidence and motivation, especially when completing more challenging puzzles. The process reinforces patience and goal-setting behavior.</p>
+                    <h4>Creativity & Visual Perception</h4>
+                    <p>Puzzles enhance the ability to interpret visual information and recognize artistic details. They expose users to different styles, colors, and compositions, which can inspire creativity. This is especially true for puzzles featuring artwork or photography.</p>
+                    <h4>Accessible & Screen-Free Entertainment</h4>
+                    <p>Jigsaw puzzles offer a break from screens while still providing engaging mental stimulation. They are accessible across age groups and skill levels, requiring no technology or special setup. This makes them a versatile and inclusive form of entertainment.</p>
+                </div>
             </div>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>What is the difference between virtual and physical jigsaw puzzles?</h3>
-                <p class="answer"></p>
+                <p class="answer">Virtual puzzles are completed on digital devices and often include features such as piece rotation, hints, and automated sorting, making them convenient and accessible. Physical puzzles, on the other hand, provide a tactile experience with hands-on interaction and a stronger sense of accomplishment upon completion. While virtual puzzles offer flexibility and portability, physical puzzles are often preferred for their immersive and screen-free nature.</p>
             </div>
-            <button class="drop-down" title="View Answer"></button>
             <div class="question">
+                <button class="drop-down" title="View Answer"></button>
                 <h3>Where is the best place to get my jigsaw puzzles?</h3>
-                <p class="answer"></p>
+                <p class="answer">Jigsaw puzzles can be found through a variety of sources, including online retailers, specialty puzzle shops, and major department stores. Shopping directly from well-known brands or curated puzzle websites often ensures higher quality and a wider selection of designs. Local thrift stores, libraries, and community exchanges can also be excellent options for finding affordable or unique puzzles. The best source ultimately depends on budget, desired quality, and whether variety or value is the primary goal.</p>
             </div>
-            <p>Example questions: Do puzzles lower cortisol? Are they good for memory loss/can they prevent it? What puzzle size should I start with? </p>
-            <p>You need to make a form to help tell them what puzzle size they should start with.</p>
+            <!-- You could to make a form to help tell them what puzzle size they should start with -->
         </div>
         <div>
             <h2>Do you have a questions?</h2>
             <p>Send a question and we'll get back to you in 2-3 business days!</p>
-            <form>
+            <form method="get" action="questions.html">
                 <label for="name">Name: </label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email: </label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="user-question">What is your question? </label>
-                <textarea id="user-question" name="user-question"></textarea>
+                <textarea id="user-question" name="user-question" required></textarea>
+                <button type="submit">Ask Question</button>
             </form>
         </div>
     </main>
@@ -93,10 +115,13 @@
             <a href="https://www.facebook.com/"><img src="images/facebook-bw.svg" alt="Facebook Logo" loading="lazy"></a>
             <a href="https://www.instagram.com/"><img src="images/instagram-bw.svg" alt="Instagram Logo" loading="lazy"></a>
             <a href="https://www.tiktok.com"><img src="images/tictok-bw.svg" alt="TikTok Logo" loading="lazy"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube-bw.svg" alt="Facebook Logo" loading="lazy"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube-bw.svg" alt="YouTube Logo" loading="lazy"></a>
         </div>
         <div class="location">
             <h3>Our Locations:</h3>
+            <a href="https://maps.app.goo.gl/QYkfe3bRg6YVLiPR8">Nashville, TN, USA</a>
+            <a href="https://maps.app.goo.gl/4CE7JSHzSV57EM4cA">Hagåtña, Guam</a>
+            <a href="https://maps.app.goo.gl/LyGD5P5M9jpc2mJo6">Copenhagen, Denmark</a>
         </div>
         <p>&copy; <span id="currentYear"></span> Jigsaw Puzzle Hub</p>
     </footer>
