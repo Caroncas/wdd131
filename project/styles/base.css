@@ -235,6 +235,28 @@ button[type='submit'] {
   border-bottom: 1px dotted var(--text-color);
 }
 
+fieldset legend {
+  font-family: "Poiret One", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#submit:before {
+  display: block;
+}
+
+#submit:before.open {
+  display: none;
+}
+
+fieldset span {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
 @media (width >= 500px) and (width <= 750px) {
     h2 {
         font-size: 3rem;
